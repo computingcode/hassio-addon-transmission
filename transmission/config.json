@@ -44,7 +44,9 @@
       "openvpn_enabled": false,
       "openvpn_config": "",
       "openvpn_username": "",
-      "openvpn_password": ""
+      "openvpn_password": "",
+	  "incomplete_dir_enabled": true,
+	  "incomplete_dir": "/share/incomplete"
     },
     "schema": {
       "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)",
@@ -54,7 +56,10 @@
       "openvpn_enabled": "bool",
       "openvpn_config": "str",
       "openvpn_username": "str",
-      "openvpn_password": "str"
+      "openvpn_password": "str",
+	  "incomplete_dir_enabled": "bool",
+	  "incomplete_dir":"str"
+	  
     },
     "environment": {
       "LOG_FORMAT": "{LEVEL}: {MESSAGE}"
