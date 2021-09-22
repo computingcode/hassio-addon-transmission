@@ -21,7 +21,7 @@ CONFIG=$(</data/transmission/settings.json)
 # Defaults
 incomplete_dir_enabled=$(bashio::config 'incomplete_dir_enabled')
 incomplete_dir=$(bashio::config 'incomplete_dir')
-CONFIG=$(bashio::jq "${CONFIG}" ".\"incomplete-dir\"=${incomplete_dir}")
+CONFIG=$(bashio::jq "${CONFIG}" ".\"incomplete-dir\"=\"${incomplete_dir}\"")
 CONFIG=$(bashio::jq "${CONFIG}" ".\"incomplete-dir-enabled\"=${incomplete_dir_enabled}")
 CONFIG=$(bashio::jq "${CONFIG}" ".\"download-dir\"=\"/share/downloads\"")
 CONFIG=$(bashio::jq "${CONFIG}" ".\"rpc-whitelist-enabled\"=false")
