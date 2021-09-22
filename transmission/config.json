@@ -45,7 +45,7 @@
       "openvpn_config": "",
       "openvpn_username": "",
       "openvpn_password": "",
-	  "incomplete_dir_enabled": true,
+	  "incomplete_dir_enabled": false,
 	  "incomplete_dir": "/share/incomplete"
     },
     "schema": {
